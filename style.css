@@ -1,0 +1,666 @@
+#intro-screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #fce4ec;
+}
+
+#bear-img {
+    max-width: 250px;
+    border-radius: 20px;
+}
+
+#kar-img {
+    max-width: 320px;
+    max-height: 320px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+#gecis-kisim h1 {
+    color: #e91e63;
+    font-size: 2em;
+    text-align: center;
+}
+
+#ikinci-btn {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#gecis-kisim {
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fce4ec;
+}
+
+#ikinci-kisim {
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fce4ec;
+}
+
+#ucuncu-kisim {
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fce4ec;
+}
+
+#ikinci {
+    color: #e91e63;
+    font-size: 2em;
+    text-align: top;
+}
+
+#ucuncu-btn {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#ikinci-txt-1 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    max-width: 600px;
+}
+
+#ikinci-txt-2 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    max-width: 600px;
+}
+
+#ikinci-txt-3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    max-width: 600px;
+}
+
+#ikinci-txt-4 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* ---- 3. Kısım Stiller ---- */
+
+#ucuncu {
+    color: #e91e63;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#gecis-anilar {
+    min-height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #ffe4f0, #f8bbd0 45%, #fce4ec 100%);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#gecis-anilar .gecis-content h1 {
+    font-size: 3rem;
+    color: #c2185b;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 16px rgba(233, 30, 99, 0.2);
+}
+
+#gecis-anilar .gecis-content p {
+    font-size: 1.2rem;
+    max-width: 620px;
+    color: #880e4f;
+    margin: 0 auto 28px;
+}
+
+.heart-container {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    bottom: -40px;
+    width: 24px;
+    height: 22px;
+    background: #ff6f91;
+    transform: rotate(-45deg);
+    border-radius: 24px 24px 0 0;
+    opacity: 0.9;
+    animation: float-heart 3.5s ease-in infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #ff6f91;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -12px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: 12px;
+}
+
+.heart:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+    animation-duration: 3.8s;
+}
+
+.heart:nth-child(2) {
+    left: 28%;
+    animation-delay: 0.5s;
+    animation-duration: 3.2s;
+    width: 20px;
+    height: 18px;
+}
+
+.heart:nth-child(3) {
+    left: 46%;
+    animation-delay: 1s;
+    animation-duration: 4s;
+}
+
+.heart:nth-child(4) {
+    left: 64%;
+    animation-delay: 0.3s;
+    animation-duration: 3.6s;
+}
+
+.heart:nth-child(5) {
+    left: 82%;
+    animation-delay: 0.8s;
+    animation-duration: 3.4s;
+}
+
+.heart:nth-child(6) {
+    left: 18%;
+    animation-delay: 1.2s;
+    animation-duration: 4.1s;
+}
+
+.heart:nth-child(7) {
+    left: 52%;
+    animation-delay: 0.7s;
+    animation-duration: 3.7s;
+}
+
+.heart:nth-child(8) {
+    left: 70%;
+    animation-delay: 1.5s;
+    animation-duration: 4.3s;
+}
+
+@keyframes float-heart {
+    0% {
+        transform: translateY(0) rotate(-45deg) scale(0.9);
+        opacity: 0.9;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-420px) rotate(-45deg) scale(1.1);
+        opacity: 0;
+    }
+}
+
+#ucuncu-txt-1,
+#ucuncu-txt-2,
+#ucuncu-txt-3,
+#ucuncu-txt-4 {
+    display: inline-block;
+    background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+    color: #c2185b;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 16px 32px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#ucuncu-txt-1:hover,
+#ucuncu-txt-2:hover,
+#ucuncu-txt-3:hover,
+#ucuncu-txt-4:hover {
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 6px 25px rgba(233, 30, 99, 0.35);
+}
+
+#dorduncu-btn {
+    margin-top: 30px;
+    background: linear-gradient(135deg, #ec407a, #f48fb1);
+    color: white;
+    border: none;
+    padding: 14px 36px;
+    font-size: 1.15em;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+#dorduncu-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(233, 30, 99, 0.45);
+    background: linear-gradient(135deg, #e91e63, #ec407a);
+}
+#sarki-kisim {
+    min-height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #fff0f4 0%, #f8bbd0 100%);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#sarki-kisim h1 {
+    color: #c2185b;
+    font-size: 2.4em;
+    margin-bottom: 10px;
+}
+
+#sarki-kisim p {
+    max-width: 720px;
+    color: #880e4f;
+    font-size: 1.05em;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+.sarki-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.sarki-link {
+    display: block;
+    padding: 18px 22px;
+    border-radius: 18px;
+    background: white;
+    color: #c2185b;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: 2px solid transparent;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.sarki-link:hover {
+    background: #fde8ef;
+    border-color: #e91e63;
+    transform: translateY(-2px);
+}
+
+#gercek-ilk-sarki-btn {
+    margin-top: 22px;
+    background: linear-gradient(135deg, #e91e63, #f48fb1);
+    color: white;
+    border: none;
+    padding: 14px 34px;
+    font-size: 1.05em;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+#gercek-ilk-sarki-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(233, 30, 99, 0.45);
+    background: linear-gradient(135deg, #d81b60, #ec407a);
+}
+
+#final-gec-btn {
+    margin-top: 16px;
+    background: linear-gradient(135deg, #e91e63, #f48fb1);
+    color: white;
+    border: none;
+    padding: 14px 34px;
+    font-size: 1.05em;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+#final-gec-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(233, 30, 99, 0.45);
+    background: linear-gradient(135deg, #d81b60, #ec407a);
+}
+
+#besinci-kisim {
+    min-height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #fff0f4 0%, #f8bbd0 100%);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#besinci-kisim h1 {
+    color: #c2185b;
+    font-size: 2.4em;
+    margin-bottom: 16px;
+}
+
+#besinci-kisim p {
+    max-width: 720px;
+    color: #880e4f;
+    font-size: 1.1em;
+    margin-bottom: 28px;
+}
+
+#sarkilara-gec-btn {
+    background: linear-gradient(135deg, #e91e63, #f48fb1);
+    color: white;
+    border: none;
+    padding: 14px 36px;
+    font-size: 1.05em;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+#sarkilara-gec-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(233, 30, 99, 0.45);
+    background: linear-gradient(135deg, #d81b60, #ec407a);
+}
+/* ---- 4. Kısım Stiller ---- */
+
+#dorduncu-kisim {
+    min-height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fce4ec;
+    padding: 40px 20px;
+}
+
+#dorduncu {
+    color: #e91e63;
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(233, 30, 99, 0.15);
+}
+
+#dorduncu-kisim .resim-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+#dorduncu-img-1,
+#dorduncu-img-2,
+#dorduncu-img-3,
+#dorduncu-img-4 {
+    flex: 1 1 calc(50% - 18px);
+    max-width: calc(50% - 18px);
+    min-width: 280px;
+    max-height: 320px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(233, 30, 99, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#dorduncu-img-1:hover,
+#dorduncu-img-2:hover,
+#dorduncu-img-3:hover,
+#dorduncu-img-4:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 8px 28px rgba(233, 30, 99, 0.3);
+}
+
+#dorduncu-txt-1 {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.15em;
+    color: #c2185b;
+    text-align: center;
+    max-width: 650px;
+    line-height: 1.7;
+    background: linear-gradient(135deg, #fff0f3, #fce4ec);
+    padding: 18px 28px;
+    border-radius: 18px;
+    box-shadow: 0 3px 12px rgba(233, 30, 99, 0.12);
+    font-style: italic;
+}
+
+#besinci-btn {
+    margin-top: 25px;
+    background: linear-gradient(135deg, #ec407a, #f48fb1);
+    color: white;
+    border: none;
+    padding: 14px 36px;
+    font-size: 1.15em;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+#besinci-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(233, 30, 99, 0.45);
+    background: linear-gradient(135deg, #e91e63, #ec407a);
+}
+
+#final-kisim,
+#hayal-kisim {
+    min-height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #fff3f8 0%, #f8bbd0 100%);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#final-kisim h1,
+#hayal-kisim h1 {
+    color: #c2185b;
+    font-size: 2.4em;
+    margin-bottom: 16px;
+}
+
+#hayal-img {
+    width: 100%;
+    max-width: 720px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin: 24px 0;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+#hayal-aciklama {
+    max-width: 780px;
+    color: #6b0030;
+    font-size: 1.1em;
+    line-height: 1.75;
+    margin-bottom: 28px;
+}
+
+#hayal-next-btn,
+#son {
+    background: linear-gradient(135deg, #e91e63, #f48fb1);
+    color: white;
+    border: none;
+    padding: 14px 36px;
+    font-size: 1.05em;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+#hayal-next-btn:hover,
+#son:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(233, 30, 99, 0.45);
+    background: linear-gradient(135deg, #d81b60, #ec407a);
+}
+
+#kapanis {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #fff4f8, #ffe4ee 35%, #f8bbd0 100%);
+    padding: 40px 20px;
+}
+
+.kapanis-grid {
+    display: grid;
+    grid-template-columns: 1fr minmax(320px, 520px) 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 16px;
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.kapanis-message {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    padding: 32px 28px;
+    border-radius: 36px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 18px 40px rgba(197, 60, 135, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    text-align: center;
+}
+
+.kapanis-message h1 {
+    color: #c2185b;
+    font-size: 2.6rem;
+    margin-bottom: 18px;
+}
+
+.kapanis-message p {
+    color: #6b0030;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin: 14px 0;
+}
+
+.kapanis-foto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kapanis-foto img {
+    width: 100%;
+    max-width: 108px;
+    max-height: 108px;
+    border-radius: 22px;
+    object-fit: cover;
+    box-shadow: 0 14px 32px rgba(233, 30, 99, 0.18);
+    border: 3px solid rgba(255, 255, 255, 0.9);
+}
+
+#kapanis-btn {
+    margin-top: 22px;
+    background: linear-gradient(135deg, #e91e63, #f48fb1);
+    color: white;
+    border: none;
+    padding: 16px 34px;
+    font-size: 1.05em;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+#kapanis-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(233, 30, 99, 0.45);
+    background: linear-gradient(135deg, #d81b60, #ec407a);
+}
+
+@media (max-width: 900px) {
+    .kapanis-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, auto);
+    }
+
+    .kapanis-message {
+        grid-row: auto;
+    }
+}
